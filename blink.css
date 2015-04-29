@@ -1,0 +1,103 @@
+/* keyframe */
+@-webkit-keyframes transmission {
+    0% {
+    -webkit-transform: scale(0.1);
+    opacity: 0;
+}
+1% {
+    -webkit-transform: scale(0.1);
+    opacity: 0.6;
+}
+60% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+}
+100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+}
+}@-moz-keyframes transmission {
+    0% {
+    -webkit-transform: scale(0.1);
+    opacity: 0;
+}
+1% {
+    -webkit-transform: scale(0.1);
+    opacity: 0.6;
+}
+60% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+}
+100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+}
+}@-ms-keyframes transmission {
+    0% {
+    -webkit-transform: scale(0.1);
+    opacity: 0;
+}
+1% {
+    -webkit-transform: scale(0.1);
+    opacity: 0.6;
+}
+60% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+}
+100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+}
+}@keyframes transmission {
+    0% {
+    -webkit-transform: scale(0.1);
+    opacity: 0;
+}
+1% {
+    -webkit-transform: scale(0.1);
+    opacity: 0.6;
+}
+60% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+}
+100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+}
+}
+/* end of keyframe */
+
+.blink-wrapper {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  cursor: pointer;
+  margin: 0 auto;
+  position: relative;
+}
+.blink-wrapper .circleglow {
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 5px solid #ff4a50;
+  opacity: 0;
+  animation: transmission infinite ease-in-out 2s;
+  -webkit-animation: transmission infinite ease-in-out 2s;
+  -ms-animation: transmission infinite ease-in-out 2s;
+  -moz-animation: transmission infinite ease-in-out 2s;
+  -o-animation: transmission infinite ease-in-out 2s;
+}
+.blink-wrapper .circle {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #ff4a50;
+}
